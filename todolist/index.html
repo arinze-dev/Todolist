@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- linking fontawsome -->
+  <link rel="stylesheet" href="./asset/fontawesome/css/all.css">
+  <!-- linking css to html -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body >
+    <div class="container" style="overflow: scroll;">
+     <header>
+      <div class="content"> 
+       <h1 class="header-todolist">To Do List</h1>
+     </div>
+      <form class="task_adder">
+       <input type="text" class="add_new--task" placeholder="what did you planned out to do">
+       <button type="submit" class="submit_task"> <i class="fas fa-plus"></i></button>
+      </form>
+     </header>
+
+     <div class="task_container-Notcompleted-task">
+          <h1> Not completed</h1>
+          <!-- demo -->
+      <div class="task ">
+          <div class="content">
+           <input type="text" class="task_text" value="i will cook on weekend for my mummy 😋☺😚 i will cook on weekend for my mummy 😋☺😚 i will cook on weekend for my " readonly maxlength="200">
+          </div> 
+          <div class="task_action">
+            <button class="completed_task"><i class="fas fa-check"></i></button>
+            <button class="delete_task"><i class="fas fa-trash"></i></button>
+            <button class="edit_task"><i class="fas fa-ellipsis-vertical"></i></button> 
+          </div>
+      </div>
+      <!-- ----------------------------------- -->
+     </div>
+    <div class="task_container-Notcompleted-task completed-task">
+          <h1> completed</h1>
+          <!-- demo  -->
+      <div class="task">
+          <div class="content">
+           <input type="text" class="task_text" value="i will cook on weekend for my mummy 😋☺😚 i will cook on weekend for my mummy 😋☺😚 i will cook on weekend for my " readonly maxlength="200">
+          </div> 
+          <div class="task_action">
+            <button class="delete_task"><i class="fas fa-trash"></i></button>
+          </div>
+      </div>
+      <!-- ----------------------------------------- -->
+     </div>
+     <!-- delete message -->
+     <div class="message hidden" >
+      <h3> do you went to delete the task?</h3>
+      <button class="yes control ">yes</button>
+      <button class="no control">No</button>
+     </div>
+     <!-- ------------------------- -->
+     <!-- overlay  -->
+       <div class="overlay hidden"></div> 
+       <!-- -------------------- -->
+    </div>
+    
+<script src="./js/script.js"></script>
+</body>
+</html>
